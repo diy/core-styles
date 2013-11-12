@@ -11,7 +11,9 @@
     "hypergluten": "~0.0.2",
     "less": "~1.5.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "simple": "~0.2.0"
+  },
   "scripts": {
     "start": "make start",
     "test": "make test"

@@ -11,19 +11,6 @@
 var less = require('./less');
 
 /**
- * Compile a less tree in to autoprefixed css w/ sourcemaps.
- *
- * @param {object} tree - Tree object from parsed .less file.
- *
- * @return {string} Compiled css
- */
-function toCSS (tree) {
-    return tree.toCSS({
-        sourceMap: true
-    })
-}
-
-/**
  * Exports
  *
  * @param {string} p - Path to target less file
@@ -35,7 +22,9 @@ module.exports = function (p, callback) {
         function (err, tree) {
             if (err) return callback(err);
 
-            callback(null, toCSS(tree));
+            callback(null, tree.toCSS({
+                sourceMap: true
+            }));
         }
     );
 };
