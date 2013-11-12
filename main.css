@@ -1,0 +1,1498 @@
+/**
+ * Main styleguide css. Imports diy-core-styles index.less and defines 
+ * additional styles specific to the styleguide and not meant for 
+ * outside module consumption.
+ *
+ * @package diy-core-styles
+ * @author Derek Reynolds <drk@diy.org>
+ */
+
+/**
+ * Dependencies
+ */
+
+/**
+ * Colors
+ */
+
+/**
+ * Typography
+ */
+
+/**
+ * Background Colors
+ */
+
+/**
+ * Breakpoints
+ */
+
+/**
+ * Whitespace
+ */
+
+/**
+ * Lib
+ */
+
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+  background: transparent;
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+
+pre {
+  white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/**
+ * Buttons
+ *
+ * @package diy-core-styles
+ * @author Derek Reynolds <drk@diy.org>
+ */
+
+/**
+ * Whitespace
+ *
+ * Should be applie to all inner elements of a button.
+ */
+
+.btn-pv,
+.btn-plain,
+.btn-default.btn-plain,
+a.btn-default.btn-plain,
+.btn-cta.btn-plain,
+a.btn-cta.btn-plain,
+.btn-danger.btn-plain,
+a.btn-danger.btn-plain {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.btn-pl,
+.btn-plain,
+.btn-default.btn-plain,
+a.btn-default.btn-plain,
+.btn-cta.btn-plain,
+a.btn-cta.btn-plain,
+.btn-danger.btn-plain,
+a.btn-danger.btn-plain {
+  padding-left: 10px;
+}
+
+.btn-pr,
+.btn-plain,
+.btn-default.btn-plain,
+a.btn-default.btn-plain,
+.btn-cta.btn-plain,
+a.btn-cta.btn-plain,
+.btn-danger.btn-plain,
+a.btn-danger.btn-plain {
+  padding-right: 10px;
+}
+
+/**
+ * More common to have buttons w/ compound styles such as icons/counts
+ * which require additional markup that might need to be full bleed. This allows
+ * core button styles to have no default padding, but in the cases there is no 
+ * additional markup that would set it's own padding this class can be used 
+ * to provide default padding.
+ */
+
+/**
+ * Base DIY button object that should be extended by all button styles.
+ */
+
+.diy-btn,
+.btn-default,
+a.btn-default,
+.btn-cta,
+a.btn-cta,
+.btn-danger,
+a.btn-danger {
+  padding: 0;
+  background: #cccccc;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  -webkit-transition: background 0.15s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
+  transition: background 0.15s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/**
+ * Base DIY button hover object that should be extended by all 
+ * button hover styles.
+ */
+
+.diy-btn-hover,
+.diy-btn-focus,
+.btn-default:hover,
+a.btn-default:hover,
+.btn-cta:hover,
+a.btn-cta:hover,
+.btn-danger:hover,
+a.btn-danger:hover,
+.btn-default:focus,
+a.btn-default:focus,
+.btn-cta:focus,
+a.btn-cta:focus,
+.btn-danger:focus,
+a.btn-danger:focus {
+  color: #fff;
+}
+
+/**
+ * Base DIY button active object that should be extended by all 
+ * button hover styles.
+ */
+
+.diy-btn-active,
+.btn-default:active,
+a.btn-default:active,
+.btn-cta:active,
+a.btn-cta:active,
+.btn-danger:active,
+a.btn-danger:active {
+  -webkit-box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+/**
+ * Base DIY button focus object that should be extended by all 
+ * button hover styles.
+ */
+
+.diy-btn-focus,
+.btn-default:focus,
+a.btn-default:focus,
+.btn-cta:focus,
+a.btn-cta:focus,
+.btn-danger:focus,
+a.btn-danger:focus {
+  outline: none;
+}
+
+/**
+ * btn-default
+ */
+
+.btn-default,
+a.btn-default {
+  background: #0093d7;
+}
+
+.btn-default:hover,
+a.btn-default:hover {
+  background: #0070a4;
+}
+
+.btn-default:active,
+a.btn-default:active {
+  background: #005f8b;
+}
+
+/**
+ * btn-cta
+ */
+
+.btn-cta,
+a.btn-cta {
+  background: #00cca2;
+}
+
+.btn-cta:hover,
+a.btn-cta:hover {
+  background: #00997a;
+}
+
+.btn-cta:active,
+a.btn-cta:active {
+  background: #008065;
+}
+
+/**
+ * btn-danger
+ */
+
+.btn-danger,
+a.btn-danger {
+  background: #ff2c4a;
+}
+
+.btn-danger:hover,
+a.btn-danger:hover {
+  background: #f80023;
+}
+
+.btn-danger:active,
+a.btn-danger:active {
+  background: #df0020;
+}
+
+@font-face {
+  font-family: 'ApexRounded';
+  src: url('fonts/apex-book.eot?2.0');
+  src: url('fonts/apex-book.eot?2.0#iefix') format('embedded-opentype'), url('fonts/apex-book.ttf?2.0') format('truetype'), url('fonts/apex-book.woff?2.0') format('woff'), url('fonts/apex-book.svg?2.0#font') format('svg');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'ApexRounded';
+  src: url('fonts/apex-medium.eot?2.0');
+  src: url('fonts/apex-medium.eot?2.0#iefix') format('embedded-opentype'), url('fonts/apex-medium.ttf?2.0') format('truetype'), url('fonts/apex-medium.woff?2.0') format('woff'), url('fonts/apex-medium.svg?2.0#font') format('svg');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Icons';
+  src: url('fonts/diy-regular.eot?2.0');
+  src: url('fonts/diy-regular.eot?2.0#iefix') format('embedded-opentype'), url('fonts/diy-regular.ttf?2.0') format('truetype'), url('fonts/diy-regular.woff?2.0') format('woff'), url('fonts/diy-regular.svg?2.0#diyregular') format('svg');
+  font-weight: normal;
+}
+
+/**
+ * Forms
+ *
+ * @package diy-core-styles
+ * @author Derek Reynolds <drk@diy.org>
+ */
+
+/**
+ * Colors
+ */
+
+/**
+ * Defaults
+ */
+
+label {
+  position: relative;
+}
+
+/**
+ * Inputs
+ */
+
+.diy-input,
+input[type=text],
+input[type=email],
+input[type=search],
+input[type=password],
+textarea,
+.diy-toggle-outer,
+input[type=checkbox] + .label-text:before,
+input[type=radio] + .label-text:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 2px solid #cccccc;
+  border-radius: 4px;
+  -webkit-transition: border-color 0.2s ease-in-out;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.diy-input-focus,
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=search]:focus,
+input[type=password]:focus,
+textarea:focus {
+  border-color: #0093d7;
+  outline: none;
+}
+
+.diy-input-disabled,
+input[type=text]:disabled,
+input[type=email]:disabled,
+input[type=search]:disabled,
+input[type=password]:disabled,
+textarea:disabled,
+input[type=checkbox]:disabled + .label-text:before,
+input[type=radio]:disabled + .label-text:before,
+input[type=checkbox]:disabled + .label-text:hover:before,
+input[type=radio]:disabled + .label-text:hover:before {
+  background: #efefef;
+  border-color: #cccccc;
+}
+
+.diy-input-valid,
+input[type=text].field-valid,
+input[type=email].field-valid,
+input[type=search].field-valid,
+input[type=password].field-valid,
+textarea.field-valid {
+  border-color: rgba(0, 204, 162, 0.5);
+}
+
+.diy-input-valid-focus,
+input[type=text].field-valid:focus,
+input[type=email].field-valid:focus,
+input[type=search].field-valid:focus,
+input[type=password].field-valid:focus,
+textarea.field-valid:focus {
+  border-color: #00cca2;
+}
+
+.diy-input-invalid,
+input[type=text].field-invalid,
+input[type=email].field-invalid,
+input[type=search].field-invalid,
+input[type=password].field-invalid,
+textarea.field-invalid {
+  border-color: rgba(255, 192, 0, 0.5);
+}
+
+.diy-input-invalid-focus,
+input[type=text].field-invalid:focus,
+input[type=email].field-invalid:focus,
+input[type=search].field-invalid:focus,
+input[type=password].field-invalid:focus,
+textarea.field-invalid:focus {
+  border-color: #ffc000;
+}
+
+input[type=text],
+input[type=email],
+input[type=search],
+input[type=password],
+textarea {
+  position: relative;
+  padding: 8px 10px;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-size: 1.2222222222222223rem;
+  font-weight: bold;
+}
+
+textarea {
+  font-size: 18px;
+  font-size: 1rem;
+}
+
+.input-lrg {
+  width: 600px;
+}
+
+.input-med {
+  width: 400px;
+}
+
+.input-sml {
+  width: 200px;
+}
+
+.input-full {
+  width: 100%;
+}
+
+/**
+ * Input Placeholders
+ */
+
+::-webkit-input-placeholder {
+  color: #cccccc;
+  font-weight: normal;
+}
+
+::-moz-input-placeholder {
+  color: #cccccc;
+  font-weight: normal;
+}
+
+:-ms-input-placeholder {
+  color: #cccccc;
+  font-weight: normal;
+}
+
+:-moz-input-placeholder {
+  color: #cccccc;
+  font-weight: normal;
+}
+
+/**
+ * Base style object for toggle border meant to be extended by all
+ * radio and checkbox inputs.
+ */
+
+.diy-toggle-outer {
+  content: "";
+  position: absolute;
+  margin: -1px 0 0 -30px;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+}
+
+/**
+ * Base style object for inside of toggles meant to be extended by all 
+ * radio and checkbox inputs.
+ */
+
+.diy-toggle-inner {
+  position: absolute;
+  left: -25px;
+  opacity: 0;
+  -webkit-transform: scale3d(0, 0, 0);
+  -ms-transform: scale3d(0, 0, 0);
+  transform: scale3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.68, -0.55, 0.265, 1.8), opacity 0.05s ease-in-out;
+  transition: transform 0.1s cubic-bezier(0.68, -0.55, 0.265, 1.8), opacity 0.05s ease-in-out;
+}
+
+/**
+ * Checkbox and Radio styles
+ *
+ * @note: To achieve custom style of these inputs we style pseudo elements 
+ *        which requires a specific markup in which the input is wrapped in 
+ *        a label element w/ the label text wrapped in a `.label-text` el.
+ */
+
+input[type=checkbox],
+input[type=radio] {
+  opacity: 0;
+  margin-bottom: 13px;
+  /**
+     * Attach outer style to :before and inner to :after
+     */
+}
+
+input[type=checkbox] + .label-text,
+input[type=radio] + .label-text {
+  position: relative;
+  margin-left: 4px;
+}
+
+input[type=checkbox] + .label-text:before,
+input[type=radio] + .label-text:before {
+  content: "";
+  position: absolute;
+  margin: -1px 0 0 -30px;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+}
+
+input[type=checkbox] + .label-text:after,
+input[type=radio] + .label-text:after {
+  position: absolute;
+  left: -25px;
+  opacity: 0;
+  -webkit-transform: scale3d(0, 0, 0);
+  -ms-transform: scale3d(0, 0, 0);
+  transform: scale3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.68, -0.55, 0.265, 1.8), opacity 0.05s ease-in-out;
+  transition: transform 0.1s cubic-bezier(0.68, -0.55, 0.265, 1.8), opacity 0.05s ease-in-out;
+}
+
+input[type=checkbox]:checked + .label-text,
+input[type=radio]:checked + .label-text {
+  border-bottom: 1px dotted #cccccc;
+}
+
+input[type=checkbox]:checked + .label-text:after,
+input[type=radio]:checked + .label-text:after {
+  opacity: 1;
+  -webkit-transform: scale3d(1, 1, 1);
+  -ms-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+}
+
+input[type=checkbox]:disabled + .label-text,
+input[type=radio]:disabled + .label-text {
+  color: #cccccc;
+}
+
+input[type=checkbox]:disabled + .label-text:hover,
+input[type=radio]:disabled + .label-text:hover {
+  cursor: default;
+}
+
+input[type=checkbox] + .label-text:hover,
+input[type=radio] + .label-text:hover {
+  cursor: pointer;
+}
+
+input[type=checkbox] + .label-text:hover:before,
+input[type=radio] + .label-text:hover:before,
+input[type=checkbox]:focus + .label-text:before,
+input[type=radio]:focus + .label-text:before {
+  border-color: #0093d7;
+}
+
+input[type=checkbox] + .label-text:after {
+  content: "T";
+  top: 3px;
+  margin-left: -1px;
+  font-size: 22px;
+  font-size: 1.2222222222222223rem;
+  font-family: Icons;
+}
+
+input[type=radio] + .label-text:before {
+  border-radius: 13px;
+}
+
+input[type=radio] + .label-text:after {
+  content: "";
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background: #292929;
+}
+
+/**
+ * Validation
+ */
+
+.valid-icn {
+  position: absolute;
+  margin: 12px 0 0 -32px;
+  font-size: 28px;
+  font-size: 1.5555555555555556rem;
+  color: #00cca2;
+}
+
+.diy-icn {
+  display: inline-block;
+}
+
+.ribbon-icn:before {
+  content: "&";
+}
+
+.diy-icn:before {
+  font-family: Icons;
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal !important;
+}
+
+.dot-icn:before {
+  content: 'B';
+}
+
+.cog-icn:before {
+  content: 'E';
+}
+
+.paw-icn:before {
+  content: 'Z';
+}
+
+.cart-icn:before {
+  content: '$';
+  font-size: 24px;
+  font-size: 1.3333333333333333rem;
+}
+
+.market-icn:before {
+  content: '"';
+  font-size: 32px;
+  font-size: 1.7777777777777777rem;
+}
+
+.patches-icn:before {
+  content: 'a';
+  font-size: 24px;
+  font-size: 1.3333333333333333rem;
+}
+
+.supplies-icn:before {
+  content: '!';
+}
+
+.comment-icn:before {
+  content: '>';
+}
+
+.favorite-icn:before {
+  content: 'D';
+}
+
+.favorite-active-icn:before {
+  color: #fd4d44;
+}
+
+.badge-icn:before {
+  content: 'K';
+}
+
+.share-icn:before {
+  content: "+";
+}
+
+.fork-icn:before {
+  content: "A";
+  font-size: 24px;
+  font-size: 1.3333333333333333rem;
+}
+
+.play-icn:before {
+  content: "G";
+}
+
+.edit-icn:before {
+  content: "Q";
+}
+
+.delete-icn:before {
+  content: "U";
+}
+
+.skull-icn:before {
+  content: "`";
+}
+
+.reply-icn:before {
+  content: "M";
+}
+
+.emoji-icn:before {
+  content: "9";
+}
+
+.send-icn:before {
+  content: "^";
+}
+
+.how-to-icn:before {
+  content: ",";
+}
+
+.book-icn:before {
+  content: ")";
+}
+
+.stream-icn:before {
+  content: ".";
+}
+
+.hex-icn:before {
+  content: "K";
+}
+
+.tri-hex-icn:before {
+  content: "L";
+}
+
+.tri-group-icn:before {
+  content: "8";
+}
+
+.explore-icn:before {
+  content: "P";
+}
+
+.blog-icn:before {
+  content: "/";
+}
+
+.portfolio-icn:before {
+  content: "N";
+  font-size: 26px;
+  font-size: 1.4444444444444444rem;
+}
+
+.maker-icn:before {
+  content: "X";
+}
+
+.photos-icn:before {
+  content: "H";
+}
+
+.power-icn:before {
+  content: "(";
+  font-size: 34px;
+  font-size: 1.8888888888888888rem;
+}
+
+.check-icn:before {
+  content: "T";
+}
+
+.lock-icn:before {
+  content: "<";
+}
+
+.lightning-icn:before {
+  content: "%";
+}
+
+.link-icn:before {
+  content: "+";
+}
+
+.search-icn:before {
+  content: "C";
+}
+
+.close-icn:before,
+.error-icn:before {
+  content: "\\";
+}
+
+.alert-icn:before {
+  content: "-";
+}
+
+.pizza-icn:before {
+  content: "]";
+}
+
+.info-icn:before {
+  content: "0";
+}
+
+.back-icn:before {
+  content: "e";
+}
+
+.next-icn:before {
+  content: "d";
+}
+
+.refresh-icn:before {
+  content: "f";
+}
+
+.halloween-icn {
+  width: 25px;
+  height: 22px;
+  background-image: url("/images/explore/halloween-icn.png");
+}
+
+/**
+ * Typography
+ *
+ * @package diy-core-styles
+ * @author Derek Reynolds <drk@diy.org>
+ */
+
+/**
+ * Mixins
+ */
+
+/**
+ * Given a pixel value, the relative caluclation will be returned.
+ *
+ * @param {mixed} size - `16px` or `16`
+ */
+
+body {
+  color: #292929;
+  font-size: 18px;
+  font-family: ApexRounded, sans-serif;
+}
+
+/**
+ * Headings
+ */
+
+.base-heading,
+.xlrg-heading,
+.lrg-heading,
+.med-heading,
+.sml-heading,
+.xsml-heading {
+  font-weight: normal;
+}
+
+.xlrg-heading {
+  font-size: 64px;
+  font-size: 3.5555555555555554rem;
+}
+
+.lrg-heading {
+  font-size: 48px;
+  font-size: 2.6666666666666665rem;
+}
+
+.med-heading {
+  font-size: 40px;
+  font-size: 2.2222222222222223rem;
+}
+
+.sml-heading {
+  font-size: 32px;
+  font-size: 1.7777777777777777rem;
+}
+
+.xsml-heading {
+  font-size: 28px;
+  font-size: 1.5555555555555556rem;
+}
+
+.muted-heading {
+  color: #cccccc;
+}
+
+/**
+ * Links
+ */
+
+a {
+  display: inline-block;
+  color: #0093d7;
+  text-decoration: none;
+  -webkit-transition: color 0.08s ease-in-out;
+  transition: color 0.08s ease-in-out;
+}
+
+a:hover {
+  color: #287dbf;
+}
+
+a.dark-link {
+  color: #9995a6;
+}
+
+a.dark-link:hover {
+  color: #ceccd5;
+}
+
+/**
+ * Styleguide
+ *
+ * All default styles are mobile first and fluid. media queries can be 
+ * found at the bottom of this file.
+ */
+
+.inline-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-box-orient: horizontal;
+  -moz-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.color-swatch {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: attr(data-color);
+}
+
+.color-swatch.almost-black {
+  background-color: #292929;
+}
+
+.color-swatch.dark-gray {
+  background-color: #454545;
+}
+
+.color-swatch.med-gray {
+  background-color: #cccccc;
+}
+
+.color-swatch.light-gray {
+  background-color: #efefef;
+}
+
+.color-swatch.blanka {
+  background-color: #ffffff;
+  border: 1px solid #efefef;
+}
+
+.color-swatch.dark-plum {
+  background-color: #1f1f26;
+}
+
+.color-swatch.plum {
+  background-color: #403d4d;
+}
+
+.color-swatch.med-plum {
+  background-color: #646075;
+}
+
+.color-swatch.light-plum {
+  background-color: #9995a6;
+}
+
+.color-swatch.sprout {
+  background-color: #00cca2;
+}
+
+.color-swatch.grape-drink {
+  background-color: #6b6485;
+}
+
+.color-swatch.bloo-kazoo {
+  background-color: #0093d7;
+}
+
+.color-swatch.rad {
+  background-color: #ff2c4a;
+}
+
+.color-swatch.mellow {
+  background-color: #faef37;
+}
+
+.color-swatch.orange {
+  background-color: #ffc000;
+}
+
+/**
+ * Typography
+ */
+
+._diy-font-stack,
+._diy-font-stack-medium {
+  font-family: ApexRounded, sans-serif;
+  font-size: 32px;
+  font-size: 1.7777777777777777rem;
+  color: #292929;
+}
+
+._diy-font-stack-medium {
+  font-weight: bold;
+}
+
+._user-font-stack,
+._user-font-stack-bold {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 32px;
+  font-size: 1.7777777777777777rem;
+  color: #292929;
+}
+
+._user-font-stack-bold {
+  font-weight: bold;
+}
+
+p {
+  color: #888;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.toc {
+  background-color: #1f1f26;
+}
+
+.toc ul {
+  list-style: none;
+  padding: 0;
+}
+
+.toc ul a {
+  padding: 5px 5%;
+}
+
+.examples-wrapper {
+  margin-top: 30px;
+}
+
+.example {
+  margin-bottom: 30px;
+  padding: 0 5% 30px 5%;
+  border-bottom: 2px solid #efefef;
+}
+
+.example:last-child {
+  border-bottom: none;
+}
+
+.example.icons i {
+  font-size: 32px !important;
+}
+
+.inputs-wrapper label {
+  display: block;
+  width: auto;
+}
+
+/**
+ * media queries
+ *
+ * Currently arbitrary breakpoints based mostly on the content for producing 
+ * optimal line lengths (but probably not perfect yet).
+ */
+
+@media (min-width: 40em) {
+  .content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .toc {
+    -webkit-box-flex: 30%;
+    -webkit-flex: 30%;
+    -moz-box-flex: 30%;
+    -ms-flex: 30%;
+    flex: 30%;
+    min-width: 300px;
+  }
+
+  .toc ul {
+    padding-top: 40px;
+    position: fixed;
+  }
+
+  .toc ul a {
+    padding: 5px 40%;
+  }
+
+  .example {
+    padding: 0 10% 30px 10%;
+  }
+}
+
+@media (min-width: 60em) {
+  .example {
+    padding: 0 20% 30px 20%;
+  }
+}
+
+/*# sourceMappingURL=data:application/json,%7B%22version%22%3A3%2C%22sources%22%3A%5B%22lib%2Fnormalize.less%22%2C%22lib%2Fbuttons.less%22%2C%22lib%2Ffonts.less%22%2C%22lib%2Fforms.less%22%2C%22lib%2Ftypography.less%22%2C%22lib%2Ficons.less%22%2C%22input%22%2C%22index.less%22%5D%2C%22names%22%3A%5B%5D%2C%22mappings%22%3A%22%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3BAAUO%3BAACF%3BAACE%3BAACG%3BAACJ%3BAACA%3BAACA%3BAACA%3BAACF%3BAACD%3BAACI%3BAACC%3BEACJ%2CcAAA%3B%3B%3B%3B%3BAAOC%3BAACC%3BAACA%3BEACF%2CqBAAA%3B%3B%3B%3B%3B%3BAAQC%2CKAAI%2CIAAa%3BEAClB%2CaAAA%3BEACA%2CSAAA%3B%3B%3B%3B%3B%3BAAQI%3BAACC%3BEACL%2CaAAA%3B%3B%3B%3B%3B%3B%3B%3B%3B%3BAAaC%3BEACD%2CuBAAA%3B%3BEACA%2C0BAAA%3B%3BEACA%2C8BAAA%3B%3B%3B%3B%3B%3BAAOC%3BEACD%2CSAAA%3B%3B%3B%3B%3B%3B%3B%3BAAWF%3BEACE%2CuBAAA%3B%3B%3B%3B%3BAAOH%2CCAAO%3BEACJ%2CoBAAA%3B%3B%3B%3B%3BAAOH%2CCAAO%3BAACP%2CCAAO%3BEACJ%2CUAAA%3B%3B%3B%3B%3B%3B%3B%3B%3BAAYD%3BEACC%2CcAAA%3BEACA%2CgBAAA%3B%3B%3B%3B%3BAAOA%2CIAAQ%3BEACR%2CyBAAA%3B%3B%3B%3B%3BAAOH%3BAACM%3BEACH%2CiBAAA%3B%3B%3B%3B%3BAAOA%3BEACA%2CkBAAA%3B%3B%3B%3B%3BAAOD%3BEACC%2C4BAAA%3BEACA%2CuBAAA%3BEACA%2CSAAA%3B%3B%3B%3B%3BAAOC%3BEACD%2CgBAAA%3BEACA%2CWAAA%3B%3B%3B%3B%3BAAOA%3BAACD%3BAACA%3BAACE%3BEACD%2C6BAAA%3BEACA%2CcAAA%3B%3B%3B%3B%3BAAOA%3BEACA%2CqBAAA%3B%3B%3B%3B%3BAAOF%3BEACE%2CQAAQ%2CQAAQ%2CQAAQ%2CQAAQ%2COAAhC%3B%3B%3B%3B%3BAAOE%3BEACF%2CcAAA%3B%3B%3B%3B%3BAAOD%3BAACC%3BEACA%2CcAAA%3BEACA%2CcAAA%3BEACA%2CkBAAA%3BEACA%2CwBAAA%3B%3BAAGA%3BEACA%2CWAAA%3B%3BAAGA%3BEACA%2CeAAA%3B%3B%3B%3B%3B%3B%3B%3BAAWA%3BEACA%2CSAAA%3B%3B%3B%3B%3BAAOD%2CGAAI%2CIAAQ%3BEACX%2CgBAAA%3B%3B%3B%3B%3B%3B%3B%3BAAWG%3BEACH%2CSAAA%3B%3B%3B%3B%3B%3B%3B%3BAAWK%3BEACL%2CyBAAA%3BEACA%2CaAAA%3BEACA%2C8BAAA%3B%3B%3B%3B%3B%3BAAQG%3BEACH%2CSAAA%3B%3BEACA%2CUAAA%3B%3B%3B%3B%3B%3B%3B%3BAASE%3BAACD%3BAACC%3BAACG%3BEACL%2CoBAAA%3B%3BEACA%2CeAAA%3B%3BEACA%2CSAAA%3B%3B%3B%3B%3B%3B%3BAAQE%3BAACA%3BEACF%2CmBAAA%3B%3B%3B%3B%3B%3B%3B%3BAAUE%3BAACC%3BEACH%2CoBAAA%3B%3B%3B%3B%3B%3B%3B%3B%3BAAWE%3BAACD%2CIAAK%2CMAAe%3BAACpB%2CKAAc%3BAACd%2CKAAgB%3BEACjB%2C0BAAA%3B%3BEACA%2CeAAA%3B%3B%3B%3B%3B%3BAAOE%2CMAAU%3BAACX%2CIAAK%2CMAAW%3BEACjB%2CeAAA%3B%3B%3B%3B%3B%3BAAQC%2CKAAiB%3BAACjB%2CKAAe%3BEAChB%2CsBAAA%3B%3BEACA%2CUAAA%3B%3B%3B%3B%3B%3B%3B%3BAASC%2CKAAgB%3BEACjB%2C6BAAA%3B%3BEACA%2C4BAAA%3BEACA%2C%2BBAAA%3B%3BEACA%2CuBAAA%3B%3B%3B%3B%3B%3BAAQC%2CKAAe%2CeAA8B%3BAAC7C%2CKAAe%2CeAA4B%3BEAC5C%2CwBAAA%3B%3B%3B%3B%3BAAOE%2CMAAkB%3BAACnB%2CKAAmB%3BEACpB%2CSAAA%3BEACA%2CUAAA%3B%3B%3B%3B%3B%3BAAQK%3BEACL%2CcAAA%3B%3BEACA%2CmBAAA%3B%3B%3B%3B%3B%3B%3B%3B%3BAAWE%3BEACF%2CyBAAA%3BEACA%2CiBAAA%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3BACxYI%3BAAoBG%3BAAuEN%2CYAAW%3BAAAX%2CCAnBS%2CYAmBE%3BAA0BX%2CQAAW%3BAAAX%2CCAnBK%2CQAmBM%3BAA0BX%2CWAAW%3BAAAX%2CCAnBQ%2CWAmBG%3BEA9IZ%2CiBAAA%3BEACA%2CoBAAA%3B%3BAAGI%3BAAeG%3BAAuEN%2CYAAW%3BAAAX%2CCAnBS%2CYAmBE%3BAA0BX%2CQAAW%3BAAAX%2CCAnBK%2CQAmBM%3BAA0BX%2CWAAW%3BAAAX%2CCAnBQ%2CWAmBG%3BEAzIZ%2CkBAAA%3B%3BAAGI%3BAAWG%3BAAuEN%2CYAAW%3BAAAX%2CCAnBS%2CYAmBE%3BAA0BX%2CQAAW%3BAAAX%2CCAnBK%2CQAmBM%3BAA0BX%2CWAAW%3BAAAX%2CCAnBQ%2CWAmBG%3BEArIZ%2CmBAAA%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3BAAmBK%3BAA0CG%3BAACX%2CCAAa%3BAAyBN%3BAACP%2CCAAS%3BAAyBC%3BAACV%2CCAAY%3BEA9FT%2CUAAA%3BEAEA%2CmBAAA%3BEACA%2CYAAA%3BEACA%2CkBAAA%3BEAEA%2CWAAA%3BEAEA%2CqEAAA%3B%3B%3B%3B%3B%3BAAQW%3BAAgBA%3BAAeV%2CYAAO%3BAAAP%2CCALS%2CYAKF%3BAA0BP%2CQAAO%3BAAAP%2CCALK%2CQAKE%3BAA0BP%2CWAAO%3BAAAP%2CCALQ%2CWAKD%3BAAxCP%2CYAAO%3BAAAP%2CCAjBS%2CYAiBF%3BAA0BP%2CQAAO%3BAAAP%2CCAjBK%2CQAiBE%3BAA0BP%2CWAAO%3BAAAP%2CCAjBQ%2CWAiBD%3BEA9FR%2CWAAA%3B%3B%3B%3B%3B%3BAAOY%3BAA6BX%2CYAAQ%3BAAAR%2CCAXS%2CYAWD%3BAA0BR%2CQAAQ%3BAAAR%2CCAXK%2CQAWG%3BAA0BR%2CWAAQ%3BAAAR%2CCAXQ%2CWAWA%3BEAhFT%2CgDAAA%3B%3B%3B%3B%3B%3BAAOW%3BAA2BV%2CYAAO%3BAAAP%2CCAjBS%2CYAiBF%3BAA0BP%2CQAAO%3BAAAP%2CCAjBK%2CQAiBE%3BAA0BP%2CWAAO%3BAAAP%2CCAjBQ%2CWAiBD%3BEA5ER%2CaAAA%3B%3B%3B%3B%3BAAMQ%3BAACX%2CCAAa%3BEAGV%2CmBAAA%3B%3BAAEC%2CYAAO%3BAAAP%2CCALS%2CYAKF%3BEAGJ%2CmBAAA%3B%3BAAGH%2CYAAQ%3BAAAR%2CCAXS%2CYAWD%3BEAGL%2CmBAAA%3B%3B%3B%3B%3BAAWA%3BAACP%2CCAAS%3BEAGN%2CmBAAA%3B%3BAAEC%2CQAAO%3BAAAP%2CCALK%2CQAKE%3BEAGJ%2CmBAAA%3B%3BAAGH%2CQAAQ%3BAAAR%2CCAXK%2CQAWG%3BEAGL%2CmBAAA%3B%3B%3B%3B%3BAAWG%3BAACV%2CCAAY%3BEAGT%2CmBAAA%3B%3BAAEC%2CWAAO%3BAAAP%2CCALQ%2CWAKD%3BEAGJ%2CmBAAA%3B%3BAAGH%2CWAAQ%3BAAAR%2CCAXQ%2CWAWA%3BEAGL%2CmBAAA%3B%3BAC7HR%3BEAhBI%2CaAAa%2CaAAb%3BEARA%2CSAAS%2C0BAAT%3BEACA%2CSAAS%2CiCAAoC%2COAAO%2C0BAC3C%2C2BAA8B%2COAAO%2CiBACrC%2C4BAA%2BB%2COAAO%2CaACtC%2CgCAAuC%2COAAO%2CMAHvD%3BEASA%2CmBAAA%3B%3BAAcJ%3BEAVI%2CaAAa%2CaAAb%3BEAdA%2CSAAS%2C4BAAT%3BEACA%2CSAAS%2CmCAAoC%2COAAO%2C0BAC3C%2C6BAA8B%2COAAO%2CiBACrC%2C8BAA%2BB%2COAAO%2CaACtC%2CkCAAuC%2COAAO%2CMAHvD%3BEAeA%2CgBAAA%3B%3BAAQJ%3BEAJI%2CaAAa%2COAAb%3BEApBA%2CSAAS%2C4BAAT%3BEACA%2CSAAS%2CmCAAoC%2COAAO%2C0BAC3C%2C6BAA8B%2COAAO%2CiBACrC%2C8BAA%2BB%2COAAO%2CaACtC%2CwCAAuC%2COAAO%2CMAHvD%3BEAqBA%2CmBAAA%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3BACJE%3BEAAE%2CkBAAA%3B%3B%3B%3B%3BAAKG%3BAAwBN%2CKAAW%3BAACX%2CKAAY%3BAACZ%2CKAAa%3BAACb%2CKAAe%3BAACX%3BAA6CS%3BAAkDZ%2CKAbc%2CeAaD%2CcAAQ%3BAAArB%2CKAZY%2CYAYC%2CcAAQ%3BEA1HvB%2CsBAAA%3BEAEA%2CyBAAA%3BEACA%2CkBAAA%3BEAEA%2CyCAAA%3B%3BAAGa%3BAA8BZ%2CKAfW%2CWAeI%3BAAAf%2CKAdY%2CYAcG%3BAAAf%2CKAba%2CaAaE%3BAAAf%2CKAZe%2CeAYA%3BAAAf%2CQAAe%3BEA7BhB%2CqBAAA%3BEACA%2CaAAA%3B%3BAAGgB%3BAA0Bf%2CKAhBW%2CWAgBI%3BAAAf%2CKAfY%2CYAeG%3BAAAf%2CKAda%2CaAcE%3BAAAf%2CKAbe%2CeAaA%3BAAAf%2CQAAe%3BAAkGX%2CKA5BW%2CeAyBL%2CSAAc%2CcAGb%3BAAAP%2CKA3BS%2CYAwBH%2CSAAc%2CcAGb%3BAACP%2CKA7BW%2CeAyBL%2CSAAc%2CcAId%2CMAAQ%3BAAAd%2CKA5BS%2CYAwBH%2CSAAc%2CcAId%2CMAAQ%3BEA5HnB%2CmBAAA%3BEACA%2CqBAAA%3B%3BAAGqB%3BAAuBpB%2CKAlBW%2CWAkBI%3BAAAf%2CKAjBY%2CYAiBG%3BAAAf%2CKAhBa%2CaAgBE%3BAAAf%2CKAfe%2CeAeA%3BAAAf%2CQAAe%3BEAvBO%2CoCAAA%3B%3BAACF%3BAAwBhB%2CKApBO%2CWAkBI%2CYAEJ%3BAAAP%2CKAnBQ%2CYAiBG%2CYAEJ%3BAAAP%2CKAlBS%2CaAgBE%2CYAEJ%3BAAAP%2CKAjBW%2CeAeA%2CYAEJ%3BAAAP%2CQAFW%2CYAEJ%3BEAxBW%2CqBAAA%3B%3BAACF%3BAAyBpB%2CKAtBW%2CWAsBI%3BAAAf%2CKArBY%2CYAqBG%3BAAAf%2CKApBa%2CaAoBE%3BAAAf%2CKAnBe%2CeAmBA%3BAAAf%2CQAAe%3BEAzBO%2CoCAAA%3B%3BAACF%3BAA0BhB%2CKAxBO%2CWAsBI%2CcAEJ%3BAAAP%2CKAvBQ%2CYAqBG%2CcAEJ%3BAAAP%2CKAtBS%2CaAoBE%2CcAEJ%3BAAAP%2CKArBW%2CeAmBA%2CcAEJ%3BAAAP%2CQAFW%2CcAEJ%3BEA1BW%2CqBAAA%3B%3BAAEtB%2CKAAW%3BAACX%2CKAAY%3BAACZ%2CKAAa%3BAACb%2CKAAe%3BAACX%3BEAGL%2CkBAAA%3BEAEA%2CiBAAA%3BEACA%2CmBAAA%3BECtCA%2CeAAA%3BEATA%2CgCAAA%3BEDkDA%2CiBAAA%3B%3BAAeK%3BECxDL%2CeAAA%3BEATA%2CeAAA%3B%3BADqEQ%3BEAAE%2CYAAA%3B%3BAACF%3BEAAE%2CYAAA%3B%3BAACF%3BEAAE%2CYAAA%3B%3BAACF%3BEAAE%2CWAAA%3B%3B%3B%3B%3BAAKc%3BEAAE%2CcAAA%3BEAA2B%2CmBAAA%3B%3BAAC7B%3BEAAE%2CcAAA%3BEAA2B%2CmBAAA%3B%3BAAC7B%3BEAAE%2CcAAA%3BEAA2B%2CmBAAA%3B%3BAAC7B%3BEAAE%2CcAAA%3BEAA2B%2CmBAAA%3B%3B%3B%3B%3B%3BAAMvC%3BEAGd%2CSAAS%2CEAAT%3BEAEA%2CkBAAA%3BEAEA%2CsBAAA%3BEAEA%2CqBAAA%3BEAEA%2CWAAA%3BEACA%2CYAAA%3B%3B%3B%3B%3B%3BAAOc%3BEACd%2CkBAAA%3BEACA%2CWAAA%3BEAEA%2CUAAA%3BEACA%2CWAAW%2CgBAAX%3BEAEA%2C2BAA0B%2CgEAA1B%3B%3B%3B%3B%3B%3B%3B%3B%3BAAWC%2CKAAe%3BAACf%2CKAAa%3BEACd%2CUAAA%3BEACA%2CmBAAA%3B%3B%3B%3B%3BAAEE%2CKALc%2CeAKA%3BAAAd%2CKAJY%2CYAIE%3BEACZ%2CkBAAA%3BEACA%2CgBAAA%3B%3BAAMF%2CKAbc%2CeAaD%2CcAAQ%3BAAArB%2CKAZY%2CYAYC%2CcAAQ%3BEA%2FCvB%2CSAAS%2CEAAT%3BEAEA%2CkBAAA%3BEAEA%2CsBAAA%3BEAEA%2CqBAAA%3BEAEA%2CWAAA%3BEACA%2CYAAA%3B%3BAAuCE%2CKAdc%2CeAcD%2CcAAQ%3BAAArB%2CKAbY%2CYAaC%2CcAAQ%3BEA%2FBvB%2CkBAAA%3BEACA%2CWAAA%3BEAEA%2CUAAA%3BEACA%2CWAAW%2CgBAAX%3BEAEA%2C2BAA0B%2CgEAA1B%3B%3BAA2BC%2CKAhBe%2CeAgBN%2CQAAc%3BAAAvB%2CKAfa%2CYAeJ%2CQAAc%3BEACpB%2CiCAAA%3B%3BAAEC%2CKAnBW%2CeAgBN%2CQAAc%2CcAGZ%3BAAAP%2CKAlBS%2CYAeJ%2CQAAc%2CcAGZ%3BEACJ%2CUAAA%3BEACA%2CWAAW%2CgBAAX%3B%3BAAIP%2CKAzBe%2CeAyBL%2CSAAc%3BAAAxB%2CKAxBa%2CYAwBH%2CSAAc%3BEACrB%2CcAAA%3B%3BAAOC%2CKAjCW%2CeAyBL%2CSAAc%2CcAQb%3BAAAP%2CKAhCS%2CYAwBH%2CSAAc%2CcAQb%3BEACJ%2CeAAA%3B%3BAAIN%2CKAtCc%2CeAsCD%2CcAAO%3BAAApB%2CKArCY%2CYAqCC%2CcAAO%3BEAClB%2CeAAA%3B%3BAAGF%2CKA1Cc%2CeA0CD%2CcAAM%2CMAAO%3BAAA1B%2CKAzCY%2CYAyCC%2CcAAM%2CMAAO%3BAAC3B%2CKA3Ce%2CeA2CR%2CMAAa%2CcAAQ%3BAAA5B%2CKA1Ca%2CYA0CN%2CMAAa%2CcAAQ%3BEACzB%2CqBAAA%3B%3BAAKF%2CKADe%2CeACF%2CcAAO%3BEAClB%2CSAAS%2CGAAT%3BEAEA%2CQAAA%3BEACA%2CiBAAA%3BECvKJ%2CeAAA%3BEATA%2CgCAAA%3BEDmLI%2CkBAAA%3B%3BAAKF%2CKADY%2CYACC%2CcAAQ%3BEACnB%2CmBAAA%3B%3BAAGF%2CKALY%2CYAKC%2CcAAO%3BEAClB%2CSAAS%2CEAAT%3BEAEA%2CQAAA%3BEAEA%2CWAAA%3BEACA%2CYAAA%3BEAEA%2CkBAAA%3BEAEA%2CmBAAA%3B%3B%3B%3B%3BAAOG%3BEACP%2CkBAAA%3BEAEA%2CsBAAA%3BECvMA%2CeAAA%3BEATA%2CgCAAA%3BEDmNA%2CcAAA%3B%3BAE9NK%3BEACL%2CqBAAA%3B%3BAAGO%2CWAAQ%3BEACf%2CSAAS%2CGAAT%3B%3BAAGI%2CQAAQ%3BEACZ%2CkBAAA%3BEACA%2CqBAAA%3BEACA%2CkBAAA%3BEACA%2C8BAAA%3B%3BAAGI%2CQAAoB%3BEAAE%2CSAAS%2CGAAT%3B%3BAACtB%2CQAAoB%3BEAAE%2CSAAS%2CGAAT%3B%3BAACtB%2CQAAoB%3BEAAE%2CSAAS%2CGAAT%3B%3BAACrB%2CSAAmB%3BEAAE%2CSAAS%2CGAAT%3BEDE1B%2CeAAA%3BEATA%2CgCAAA%3B%3BACQO%2CWAAiB%3BEAAE%2CSAAS%2CGAAT%3BEDC1B%2CeAAA%3BEATA%2CgCAAA%3B%3BACSQ%2CYAAgB%3BEAAE%2CSAAS%2CGAAT%3BEDA1B%2CeAAA%3BEATA%2CgCAAA%3B%3BACUS%2CaAAe%3BEAAE%2CSAAS%2CGAAT%3B%3BAAClB%2CYAAgB%3BEAAE%2CSAAS%2CGAAT%3B%3BAACjB%2CaAAe%3BEAAE%2CSAAS%2CGAAT%3B%3BAACV%2CoBAAQ%3BEAAE%2CcAAA%3B%3BAACpB%2CUAAkB%3BEAAE%2CSAAS%2CGAAT%3B%3BAACpB%2CUAAkB%3BEAAE%2CSAAS%2CGAAT%3B%3BAACrB%2CSAAmB%3BEAAE%2CSAAS%2CGAAT%3BEDP1B%2CeAAA%3BEATA%2CgCAAA%3B%3BACiBK%2CSAAmB%3BEAAE%2CSAAS%2CGAAT%3B%3BAACrB%2CSAAmB%3BEAAE%2CSAAS%2CGAAT%3B%3BAACnB%2CWAAiB%3BEAAE%2CSAAS%2CGAAT%3B%3BAACpB%2CUAAkB%3BEAAE%2CSAAS%2CGAAT%3B%3BAACpB%2CUAAkB%3BEAAE%2CSAAS%2CGAAT%3B%3BAACpB%2CUAAkB%3BEAAE%2CSAAS%2CGAAT%3B%3BAACrB%2CSAAmB%3BEAAE%2CSAAS%2CGAAT%3B%3BAACnB%2CWAAiB%3BEAAE%2CSAAS%2CGAAT%3B%3BAACrB%2CSAAmB%3BEAAE%2CSAAS%2CGAAT%3B%3BAACnB%2CWAAiB%3BEAAE%2CSAAS%2CGAAT%3B%3BAACtB%2CQAAoB%3BEAAE%2CSAAS%2CGAAT%3B%3BAAClB%2CYAAgB%3BEAAE%2CSAAS%2CGAAT%3B%3BAAChB%2CcAAc%3BEAAE%2CSAAS%2CGAAT%3B%3BAAClB%2CYAAgB%3BEAAE%2CSAAS%2CGAAT%3B%3BAACrB%2CSAAmB%3BEAAE%2CSAAS%2CGAAT%3B%3BAAChB%2CcAAc%3BEAAE%2CSAAS%2CGAAT%3BEDvB1B%2CeAAA%3BEATA%2CgCAAA%3B%3BACiCM%2CUAAkB%3BEAAE%2CSAAS%2CGAAT%3B%3BAACnB%2CWAAiB%3BEAAE%2CSAAS%2CGAAT%3B%3BAACpB%2CUAAkB%3BEAAE%2CSAAS%2CGAAT%3BED1B1B%2CeAAA%3BEATA%2CgCAAA%3B%3BACoCM%2CUAAkB%3BEAAE%2CSAAS%2CGAAT%3B%3BAACrB%2CSAAmB%3BEAAE%2CSAAS%2CGAAT%3B%3BAAChB%2CcAAc%3BEAAE%2CSAAS%2CGAAT%3B%3BAACrB%2CSAAmB%3BEAAE%2CSAAS%2CGAAT%3B%3BAACnB%2CWAAiB%3BEAAE%2CSAAS%2CGAAT%3B%3BAACpB%2CUAAO%3BAACP%2CUAAkB%3BEAAE%2CSAAS%2CIAAT%3B%3BAACpB%2CUAAkB%3BEAAE%2CSAAS%2CGAAT%3B%3BAACpB%2CUAAkB%3BEAAE%2CSAAS%2CGAAT%3B%3BAACrB%2CSAAmB%3BEAAE%2CSAAS%2CGAAT%3B%3BAACrB%2CSAAmB%3BEAAE%2CSAAS%2CGAAT%3B%3BAACrB%2CSAAmB%3BEAAE%2CSAAS%2CGAAT%3B%3BAAClB%2CYAAgB%3BEAAE%2CSAAS%2CGAAT%3B%3BAAEf%3BEACX%2CWAAA%3BEACA%2CYAAA%3BEACA%2CsBAAsB%2CoCAAtB%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3BADxCC%3BEACD%2CcAAA%3BEACA%2CeAAA%3BEACA%2CoCAAA%3B%3B%3B%3B%3BAAMU%3BAAIA%3BAAKD%3BAAKA%3BAAKA%3BAAKC%3BEAvBV%2CmBAAA%3B%3BAAGU%3BEAjBV%2CeAAA%3BEATA%2CgCAAA%3B%3BAA%2BBS%3BEAtBT%2CeAAA%3BEATA%2CgCAAA%3B%3BAAoCS%3BEA3BT%2CeAAA%3BEATA%2CgCAAA%3B%3BAAyCS%3BEAhCT%2CeAAA%3BEATA%2CgCAAA%3B%3BAA8CU%3BEArCV%2CeAAA%3BEATA%2CgCAAA%3B%3BAAmDW%3BEACX%2CcAAA%3B%3B%3B%3B%3BAAMF%3BEACE%2CqBAAA%3BEAEA%2CcAAA%3BEACA%2CqBAAA%3BEAEA%2CmCAAA%3B%3BAAEC%2CCAAO%3BEAAE%2CcAAA%3B%3BAAGb%2CCAAW%3BEACR%2CcAAA%3B%3BAAEC%2CCAHO%2CUAGA%3BEAAE%2CcAAA%3B%3B%3B%3B%3B%3B%3B%3BAE%2FDD%3BEACT%2CgBAAA%3BEACA%2CSAAA%3BEACA%2CUAAA%3BEACA%2CaAAA%3BEACA%2CmBAAA%3B%3BAAGU%3BEACV%2CcAAA%3BEAEA%2CWAAA%3BEACA%2CYAAA%3BEAEA%2CmBAAA%3BEAEA%2CkBAAkB%2CgBAAlB%3B%3BAAGC%2CaAAc%3BEAAE%2CyBAAA%3B%3BAAChB%2CaAAW%3BEAAE%2CyBAAA%3B%3BAACb%2CaAAU%3BEAAE%2CyBAAA%3B%3BAACZ%2CaAAY%3BEAAE%2CyBAAA%3B%3BAACd%2CaAAQ%3BEAAE%2CyBAAA%3BEAA2B%2CyBAAA%3B%3BAACrC%2CaAAW%3BEAAE%2CyBAAA%3B%3BAACb%2CaAAM%3BEAAE%2CyBAAA%3B%3BAACR%2CaAAU%3BEAAE%2CyBAAA%3B%3BAACZ%2CaAAY%3BEAAE%2CyBAAA%3B%3BAAGd%2CaAAQ%3BEAAE%2CyBAAA%3B%3BAACV%2CaAAa%3BEAAE%2CyBAAA%3B%3BAACf%2CaAAY%3BEAAE%2CyBAAA%3B%3BAAGd%2CaAAK%3BEAAE%2CyBAAA%3B%3BAACP%2CaAAQ%3BEAAE%2CyBAAA%3B%3BAACV%2CaAAQ%3BEAAE%2CyBAAA%3B%3B%3B%3B%3BAAME%3BAAMO%3BEALpB%2CoCAAA%3BEF5CA%2CeAAA%3BEATA%2CgCAAA%3BEEuDA%2CcAAA%3B%3BAAGoB%3BEAEpB%2CiBAAA%3B%3BAAGc%3BAAMK%3BEALnB%2CaC3CuB%2C8CD2CvB%3BEFvDA%2CeAAA%3BEATA%2CgCAAA%3BEEkEA%2CcAAA%3B%3BAAGmB%3BEAEnB%2CiBAAA%3B%3BAAGF%3BEACE%2CWAAA%3BEACA%2CgBAAA%3BEACA%2CqBAAA%3B%3BAAGK%3BEACL%2CaAAA%3BEACA%2CsBAAA%3B%3BAAGC%3BEACD%2CyBAAA%3B%3BAADC%2CIAGE%3BEACC%2CgBAAA%3BEACA%2CUAAA%3B%3BAALH%2CIAGE%2CGAIG%3BEACE%2CeAAA%3B%3BAAKM%3BEACd%2CgBAAA%3B%3BAAGK%3BEACL%2CmBAAA%3BEACA%2CqBAAA%3BEACA%2CgCAAA%3B%3BAAGI%2CQAAY%3BEAChB%2CmBAAA%3B%3BAAGI%2CQAAO%2CMACT%3BEACE%2C0BAAA%3B%3BAAIQ%2CeACN%3BEAAE%2CcAAA%3BEAAgB%2CWAAA%3B%3B%3B%3B%3B%3B%3B%3BAA%2BB3B%2CQAtBwB%3BEACZ%3BIACL%2CmBAAA%3B%3BEAGC%3BIACD%2CSAAA%3BIACA%2CgBAAA%3B%3BEAFC%2CIAIE%3BIACC%2CiBAAA%3BIACA%2CeAAA%3B%3BEANH%2CIASE%2CGAAE%3BIACD%2CgBAAA%3B%3BEAIC%3BIACL%2CuBAAA%3B%3B%3BAAQP%2CQAJwB%3BEACZ%3BIACL%2CuBAAA%22%7D */

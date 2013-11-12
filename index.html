@@ -1,0 +1,385 @@
+<head>
+    <title>DIY Core Styles</title>
+    
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <div class="content">
+        <nav class="toc">
+            <ul data-bind="navlist">
+                <li data-bind="navItem"><a href="#buttons" class="dark-link">Buttons</a></li><li data-bind="navItem"><a href="#colors" class="dark-link">Colors</a></li><li data-bind="navItem"><a href="#forms" class="dark-link">Forms</a></li><li data-bind="navItem"><a href="#icons" class="dark-link">Icons</a></li><li data-bind="navItem"><a href="#typography-fonts" class="dark-link">Fonts</a></li>
+            </ul>
+        </nav>
+
+        <div class="examples-wrapper">
+            <article data-bind="example"><div class="example buttons"><h2 id="buttons" class="med-heading section-heading">
+    <a href="#buttons">Buttons</a>
+</h2>
+
+<button class="btn-default btn-plain">Default</button>
+<button class="btn-cta btn-plain">Secondary</button>
+<button class="btn-danger btn-plain">Danger</button>
+
+<h3 class="xsml-heading muted-heading">
+    Anchors and Inputs
+</h3>
+
+<a href="#" class="btn-default btn-plain">Default Anchor</a>
+<input type="submit" value="Default Input" class="btn-default btn-plain">
+</div></article><article data-bind="example"><div class="example colors"><h2 id="colors" class="med-heading section-heading">
+    <a href="#colors">Colors</a>
+</h2>
+
+<p>
+    Our colors are vibrant, exciting and communicate freshness, fun and youth. 
+    They are meant to be used as accents and calls to action, with an eye 
+    constantly on the content the design contains, making sure that it stands 
+    out more than the design itself.
+</p>
+
+<p>
+    Grape Drink is the main flood color, with Sprout being the 
+    attention-grabber. Blue is used to communicate interactivity, like buttons 
+    and text links. Red is used in instances of required attention, errors 
+    and irreversible, destructive actions.
+</p>
+
+<div id="colors-neutral">
+    <h3 class="sml-heading">Neutral</h3>
+
+    <ul class="inline-list">
+        <li>
+            <div class="color-swatch almost-black"></div>
+        </li>
+        <li>
+            <div class="color-swatch dark-gray"></div>
+        </li>
+        <li>
+            <div class="color-swatch med-gray"></div>
+        </li>
+        <li>
+            <div class="color-swatch light-gray"></div>
+        </li>
+        <li>
+            <div class="color-swatch blanka"></div>
+        </li>
+        <li>
+            <div class="color-swatch dark-plum"></div>
+        </li>
+        <li>
+            <div class="color-swatch plum"></div>
+        </li>
+        <li>
+            <div class="color-swatch med-plum"></div>
+        </li>
+        <li>
+            <div class="color-swatch light-plum"></div>
+        </li>
+    </ul>
+</div>
+
+<div id="colors-cool">
+    <h3 class="sml-heading">Cool</h3>
+
+    <ul class="inline-list">
+        <li>
+            <div class="color-swatch sprout"></div>
+        </li>
+        <li>
+            <div class="color-swatch grape-drink"></div>
+        </li>
+        <li>
+            <div class="color-swatch bloo-kazoo"></div>
+        </li>
+    </ul>
+</div>
+
+<div id="colors-warm">
+    <h3 class="sml-heading">Warm</h3>
+
+    <ul class="inline-list">
+        <li>
+            <div class="color-swatch rad"></div>
+        </li>
+        <li>
+            <div class="color-swatch mellow"></div>
+        </li>
+        <li>
+            <div class="color-swatch orange"></div>
+        </li>
+    </ul>
+</div>
+</div></article><article data-bind="example"><div class="example forms"><h2 id="forms" class="med-heading section-heading">
+    <a href="#forms">Forms</a>
+</h2>
+
+<h3 class="xsml-heading muted-heading">
+    Inputs
+</h3>
+
+<div class="inputs-wrapper">
+    <label for="text-input">Text input</label>
+    <input type="text" id="text-input" name="text-input" placeholder="Nickname">
+
+    <label for="email-input">Email input</label>
+    <input type="email" id="email-input" name="email-input" placeholder="drk@diy.org">
+
+    <label for="search-input">Search input</label>
+    <input type="search" id="search-input" name="search-input" placeholder="#minecraft">
+
+    <label for="textarea-input">Textarea</label>
+    <textarea name="textarea-input" id="textarea-inpout" placeholder="Thoughts?"></textarea>
+
+    <label for="disabled-input">Diabled input</label>
+    <input type="text" id="disabled-input" name="disabled-input" placeholder="So sorry..." disabled>
+</div>
+
+<h4 class="xsml-heading muted-heading">Sizes</h4>
+
+<div class="inputs-wrapper">
+    <label for="sml-input">Input sml</label>
+    <input type="text" id="sml-input" name="sml-input" placeholder="Small" class="input-sml">
+
+    <label for="med-input">Input med</label>
+    <input type="text" id="med-input" name="med-input" placeholder="Medium" class="input-med">
+
+    <label for="lrg-input">Input lrg</label>
+    <input type="text" id="lrg-input" name="lrg-input" placeholder="Large" class="input-lrg">
+
+    <label for="full-input">Input Full</label>
+    <input type="text" id="full-input" name="full-input" placeholder="Full" class="input-full">
+</div>
+
+<h4 class="xsml-heading muted-heading">Validation</h4>
+
+<div class="inputs-wrapper">
+    <label for="invalid-input">Invalid input</label>
+    <input type="text" id="invalid-input" name="invalid-input" value="Invalid value" placeholder="Invalid value" class="field-invalid">
+
+    <label for="valid-input">Valid input</label>
+    <input type="text" id="valid-input" name="valid-input" value="Valid value" placeholder="Valid value" class="field-valid">
+    <i class="diy-icn check-icn valid-icn"></i>
+</div>
+
+
+<h3 class="xsml-heading muted-heading">
+    Checkboxes and Radios
+</h3>
+
+<div class="inputs-wrapper">
+    <label for="checkbox">
+        <input type="checkbox" name="checkbox" id="checkbox"> 
+        <span class="label-text">Checkbox example</span>
+    </label>
+
+    <label for="radio">
+        <input type="radio" name="radio" id="radio"> 
+        <span class="label-text">Radio example</span>
+    </label>
+
+    <label for="radio2">
+        <input type="radio" name="radio" id="radio2"> 
+        <span class="label-text">Radio2 example</span>
+    </label>
+
+    <label for="checkbox-disabled">
+        <input type="checkbox" name="checkbox-disabled" id="checkbox-disabled" disabled> 
+        <span class="label-text">Checkbox disabled</span>
+    </label>
+
+    <label for="radio-disabled">
+        <input type="radio" name="radio-disabled" id="radio-disabled" disabled> 
+        <span class="label-text">Radio disabled</span>
+    </label>
+</div>
+</div></article><article data-bind="example"><div class="example icons"><h2 id="icons" class="med-heading section-heading">
+    <a href="#icons">Icons</a>
+</h2>
+
+<i class="diy-icn dot-icn"></i>
+<i class="diy-icn cog-icn"></i>
+<i class="diy-icn paw-icn"></i>
+<i class="diy-icn cart-icn"></i>
+<i class="diy-icn market-icn"></i>
+<i class="diy-icn patches-icn"></i>
+<i class="diy-icn supplies-icn"></i>
+<i class="diy-icn comment-icn"></i>
+<i class="diy-icn favorite-icn"></i>
+<i class="diy-icn favorite-active-icn"></i>
+<i class="diy-icn badge-icn"></i>
+<i class="diy-icn share-icn"></i>
+<i class="diy-icn fork-icn"></i>
+<i class="diy-icn play-icn"></i>
+<i class="diy-icn edit-icn"></i>
+<i class="diy-icn delete-icn"></i>
+<i class="diy-icn skull-icn"></i>
+<i class="diy-icn reply-icn"></i>
+<i class="diy-icn emoji-icn"></i>
+<i class="diy-icn send-icn"></i>
+<i class="diy-icn how-to-icn"></i>
+<i class="diy-icn book-icn"></i>
+<i class="diy-icn stream-icn"></i>
+<i class="diy-icn hex-icn"></i>
+<i class="diy-icn tri-hex-icn"></i>
+<i class="diy-icn tri-group-icn"></i>
+<i class="diy-icn explore-icn"></i>
+<i class="diy-icn blog-icn"></i>
+<i class="diy-icn portfolio-icn"></i>
+<i class="diy-icn maker-icn"></i>
+<i class="diy-icn photos-icn"></i>
+<i class="diy-icn power-icn"></i>
+<i class="diy-icn check-icn"></i>
+<i class="diy-icn lock-icn"></i>
+<i class="diy-icn lightning-icn"></i>
+<i class="diy-icn link-icn"></i>
+<i class="diy-icn search-icn"></i>
+<i class="diy-icn close-icn"></i>
+<i class="diy-icn error-icn"></i>
+<i class="diy-icn alert-icn"></i>
+<i class="diy-icn pizza-icn"></i>
+<i class="diy-icn info-icn"></i>
+<i class="diy-icn back-icn"></i>
+<i class="diy-icn next-icn"></i>
+<i class="diy-icn refresh-icn"></i>
+
+<!-- <ul class="inline-list">
+    <i class="diy-icn dot-icn"></i>
+    <i class="diy-icn cog-icn"></i>
+    <i class="diy-icn paw-icn"></i>
+    <i class="diy-icn cart-icn"></i>
+    <i class="diy-icn market-icn"></i>
+    <i class="diy-icn patches-icn"></i>
+    <i class="diy-icn supplies-icn"></i>
+    <i class="diy-icn comment-icn"></i>
+    <i class="diy-icn favorite-icn"></i>
+    <i class="diy-icn favorite-active-icn"></i>
+    <i class="diy-icn badge-icn"></i>
+    <i class="diy-icn share-icn"></i>
+    <i class="diy-icn fork-icn"></i>
+    <i class="diy-icn play-icn"></i>
+    <i class="diy-icn edit-icn"></i>
+    <i class="diy-icn delete-icn"></i>
+    <i class="diy-icn skull-icn"></i>
+    <i class="diy-icn reply-icn"></i>
+    <i class="diy-icn emoji-icn"></i>
+    <i class="diy-icn send-icn"></i>
+    <i class="diy-icn how-to-icn"></i>
+    <i class="diy-icn book-icn"></i>
+    <i class="diy-icn stream-icn"></i>
+    <i class="diy-icn hex-icn"></i>
+    <i class="diy-icn tri-hex-icn"></i>
+    <i class="diy-icn tri-group-icn"></i>
+    <i class="diy-icn explore-icn"></i>
+    <i class="diy-icn blog-icn"></i>
+    <i class="diy-icn portfolio-icn"></i>
+    <i class="diy-icn maker-icn"></i>
+    <i class="diy-icn photos-icn"></i>
+    <i class="diy-icn power-icn"></i>
+    <i class="diy-icn check-icn"></i>
+    <i class="diy-icn lock-icn"></i>
+    <i class="diy-icn lightning-icn"></i>
+    <i class="diy-icn link-icn"></i>
+    <i class="diy-icn search-icn"></i>
+    <i class="diy-icn close-icn"></i>
+    <i class="diy-icn error-icn"></i>
+    <i class="diy-icn alert-icn"></i>
+    <i class="diy-icn pizza-icn"></i>
+    <i class="diy-icn info-icn"></i>
+    <i class="diy-icn back-icn"></i>
+    <i class="diy-icn next-icn"></i>
+    <i class="diy-icn refresh-icn"></i>
+</ul> -->
+</div></article><article data-bind="example"><div class="example typography"><h2 id="typography-fonts" class="med-heading section-heading">
+    <a href="#typography-fonts">Fonts</a>
+</h2>
+
+<p>
+    DIY uses a custom typeface called <strong>Apex Rounded</strong>, a stylized 
+    typface that helps express a friendly personality. The Medium face is used 
+    for large headlines and interactive elements, as overuse can skew 
+    too young-feeling.
+</p>
+
+<h3 class="xsml-heading muted-heading">Apex Rounded Book</h3>
+<p class="_diy-font-stack">
+    ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 1234567890!@#$%^&amp;*()-=_+
+</p>
+
+<h3 class="xsml-heading muted-heading">Apex Rounded Medium</h3>
+<p class="_diy-font-stack-medium">
+    ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 1234567890!@#$%^&amp;*()-=_+
+</p>
+
+<p>
+    Helvetica is used for dynamic or user-generated copy to create a clear 
+    distinction between when the voice is coming from DIY or a user on the site. 
+    It also makes it clear which elements are part of the interface.
+</p>
+
+<h3 class="xsml-heading muted-heading">Helvetica Regular</h3>
+<p class="_user-font-stack">
+    ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 1234567890!@#$%^&amp;*()-=_+
+</p>
+
+<h3 class="xsml-heading muted-heading">Helvetica Bold</h3>
+<p class="_user-font-stack-bold">
+    ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 1234567890!@#$%^&amp;*()-=_+
+</p>
+
+<h2 id="typography-headings" class="med-heading">
+    <a href="#typography-headings">Headings</a>
+</h2>
+
+<p>
+    Headings should be used to structure a document's hiearchy. 
+    To provide flexibility in how a heading is styled from it's placement in 
+    the document heading classes are used in place of 
+    styling heading elements directly.
+</p><p>
+
+<h1 class="xlrg-heading">
+    Super important <a href="#">#coolclub</a> <a href="#">@drk</a>
+</h1>
+
+<h2 class="lrg-heading">
+    A little less important <a href="#">#coolclub</a> <a href="#">@drk</a>
+</h2>
+
+<h3 class="med-heading">
+    Average importance <a href="#">#coolclub</a>  <a href="#">@drk</a>
+</h3>
+
+<h4 class="sml-heading">
+    Not very important <a href="#">#coolclub</a>  <a href="#">@drk</a>
+</h4>
+
+<h5 class="xsml-heading">
+    Just a nod <a href="#">#coolclub</a>  <a href="#">@drk</a>
+</h5>
+
+<span class="med-heading">Not semantically a header</span>
+
+<h2 id="typography-paragraphs" class="med-heading">
+    Paragraphs
+</h2>
+
+</p><p>
+    This tool bag is the perfect place to store your ever-growing tool 
+    collection and makes easy work of carrying your gear from the workshop to 
+    the job site. A lot of pros choose canvas tool bags over metal boxes for 
+    their lighter weight and their ability to <a href="#">@drk</a> be hung on 
+    hooks and ladders. Don't be afraid to get this bag dirty—it only looks 
+    better with age!
+</p>
+
+<p>
+    This huge blanket is a great way to show off your patch collection. It's 
+    ideal for winter camping, cabin bedding, or a day adventure. This blanket 
+    is heavyweight, so for a <a href="#">#backpacking</a> trip you'll want 
+    something lighter. It's also flame retardant and machine washable.
+</p>
+</div></article>
+        </div>
+    </div>
+</body>
