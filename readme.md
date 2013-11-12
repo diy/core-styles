@@ -1,4 +1,4 @@
-# diy core styles
+# diy core styles – [Styleguide](http://diy.github.io/core-styles/)
 #### Core css for diy web projects
 
 This module is meant to be as minimal as possible and only provide base styling 
@@ -51,6 +51,7 @@ Returns a readable stream of the index.less file.
 ```
 npm start
 ```
+
 And navigate to [http://localhost:8000](http://localhost:8000)
 
 You can build the styleguide by running `make`
