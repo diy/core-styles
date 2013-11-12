@@ -1,0 +1,85 @@
+/**
+ * Typography
+ *
+ * @package diy-core-styles
+ * @author Derek Reynolds <drk@diy.org>
+ */
+
+/**
+ * Mixins
+ */
+.font-size-rem (@size) {
+    font-size: unit(((@size / @root-font-size)), rem);
+}
+
+/**
+ * Given a pixel value, the relative caluclation will be returned.
+ *
+ * @param {mixed} size - `16px` or `16`
+ */
+.font-size (@size) {
+    font-size: @size; // fallback
+    .font-size-rem(@size);
+}
+
+body {
+    color: @default-text-color;
+    font-size: @root-font-size;
+    font-family: @diy-font-stack;
+}
+
+/**
+ * Headings
+ */
+.base-heading {
+    font-weight: normal;
+}
+
+.xlrg-heading { 
+    .font-size(64px);
+    &:extend(.base-heading);
+}
+
+.lrg-heading { 
+    .font-size(48px);
+    &:extend(.base-heading);
+}
+
+.med-heading { 
+    .font-size(40px);
+    &:extend(.base-heading);
+}
+
+.sml-heading { 
+    .font-size(32px);
+    &:extend(.base-heading);
+}
+
+.xsml-heading { 
+    .font-size(28px);
+    &:extend(.base-heading);
+}
+
+.muted-heading {
+    color: @med-gray;
+}
+
+/**
+ * Links
+ */
+a {
+    display: inline-block;
+    
+    color: @link-color;
+    text-decoration: none;
+
+    transition: color .08s ease-in-out;
+
+    &:hover { color: @link-hover-color; }
+}
+
+a.dark-link {
+    color: @light-plum;
+
+    &:hover { color: lighten(@light-plum, 20%); }
+}

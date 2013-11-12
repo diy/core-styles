@@ -1,0 +1,224 @@
+/**
+ * Forms
+ *
+ * @package diy-core-styles
+ * @author Derek Reynolds <drk@diy.org>
+ */
+
+/**
+ * Colors
+ */
+@input-border-color:       @med-gray;
+@input-focus-border-color: @bloo-kazoo;
+@valid-border-color:       @sprout;
+@invalid-border-color:     @orange;
+@placeholder-color:        @med-gray;
+
+/**
+ * Defaults
+ */
+label { position: relative; }
+
+/**
+ * Inputs
+ */
+.diy-input {
+    box-sizing: border-box;
+
+    border: 2px solid @input-border-color;
+    border-radius: 4px;
+
+    transition: border-color .2s ease-in-out;
+}
+
+.diy-input-focus {
+    border-color: @input-focus-border-color;
+    outline: none;
+}
+
+.diy-input-disabled {
+    background: @light-gray;
+    border-color: @input-border-color;
+}
+
+.diy-input-valid         { border-color: fadeout(@valid-border-color, 50%); }
+.diy-input-valid-focus   { border-color: @valid-border-color; }
+.diy-input-invalid       { border-color: fadeout(@invalid-border-color, 50%); }
+.diy-input-invalid-focus { border-color: @invalid-border-color; }
+
+input[type=text],
+input[type=email],
+input[type=search],
+input[type=password],
+textarea {
+    &:extend(.diy-input);
+
+    position: relative;
+
+    padding: 8px 10px;
+    margin-bottom: 20px; // half of input height
+
+    .font-size(22px);
+    font-weight: bold;
+
+    &:focus         { &:extend(.diy-input-focus); }
+    &:disabled      { &:extend(.diy-input-disabled); }
+
+    &.field-valid   { 
+        &:extend(.diy-input-valid);
+        &:focus { &:extend(.diy-input-valid-focus); }
+    }
+    &.field-invalid { 
+        &:extend(.diy-input-invalid);
+        &:focus { &:extend(.diy-input-invalid-focus); }
+    }
+}
+
+textarea {
+    .font-size(18px);
+}
+
+.input-lrg  { width: 600px; }
+.input-med  { width: 400px; }
+.input-sml  { width: 200px; }
+.input-full { width: 100%; }
+
+/**
+ * Input Placeholders
+ */
+::-webkit-input-placeholder { color: @placeholder-color; font-weight: normal; }
+::-moz-input-placeholder    { color: @placeholder-color; font-weight: normal; }
+:-ms-input-placeholder      { color: @placeholder-color; font-weight: normal; }
+:-moz-input-placeholder     { color: @placeholder-color; font-weight: normal; }
+
+/**
+ * Base style object for toggle border meant to be extended by all
+ * radio and checkbox inputs.
+ */
+.diy-toggle-outer {
+    &:extend(.diy-input);
+
+    content: "";
+    
+    position: absolute;
+
+    margin: -1px 0 0 -30px;
+
+    display: inline-block;
+
+    width: 22px;
+    height: 22px;
+}
+
+/**
+ * Base style object for inside of toggles meant to be extended by all 
+ * radio and checkbox inputs.
+ */
+.diy-toggle-inner {
+    position: absolute;
+    left: -25px;
+
+    opacity: 0;
+    transform: scale3d(0, 0, 0);
+
+    transition: transform .1s cubic-bezier(0.68, -0.55, 0.265, 1.80),
+                opacity .05s ease-in-out;
+}
+
+/**
+ * Checkbox and Radio styles
+ *
+ * @note: To achieve custom style of these inputs we style pseudo elements 
+ *        which requires a specific markup in which the input is wrapped in 
+ *        a label element w/ the label text wrapped in a `.label-text` el.
+ */
+input[type=checkbox],
+input[type=radio] {
+    opacity: 0;
+    margin-bottom: 13px;
+
+    & + .label-text {
+        position: relative;
+        margin-left: 4px; // account for checkbox size
+    }
+
+    /**
+     * Attach outer style to :before and inner to :after
+     */
+    & + .label-text:before { .diy-toggle-outer(); }
+    & + .label-text:after  { .diy-toggle-inner(); }
+
+    &:checked + .label-text {
+        border-bottom: 1px dotted @med-gray;
+
+        &:after {
+            opacity: 1;
+            transform: scale3d(1, 1, 1);
+        }
+    }
+
+    &:disabled + .label-text {
+        color: @med-gray;
+
+        &:before,
+        &:hover:before {
+            &:extend(.diy-input-disabled);
+        }
+        
+        &:hover {
+            cursor: default;
+        }
+    }
+
+    & + .label-text:hover {
+        cursor: pointer;
+    }
+
+    & + .label-text:hover:before,
+    &:focus + .label-text:before {
+        border-color: @input-focus-border-color;
+    }
+}
+
+input[type=checkbox] {
+    & + .label-text:after {
+        content: "T";
+
+        top: 3px;
+        margin-left: -1px;
+
+        .font-size(22px);
+        font-family: @icon-font-stack;
+    }
+}
+
+input[type=radio] {
+    & + .label-text:before {
+        border-radius: 13px;
+    }
+
+    & + .label-text:after {
+        content: "";
+        
+        top: 4px;
+
+        width: 12px;
+        height: 12px;
+
+        border-radius: 6px;
+
+        background: @default-text-color;
+    }
+}
+
+/**
+ * Validation
+ */
+.valid-icn {
+    position: absolute;
+
+    margin: 12px 0 0 -32px;
+
+    .font-size(28px);
+    color: @sprout;
+}

@@ -1,0 +1,168 @@
+/**
+ * Main styleguide css. Imports diy-core-styles index.less and defines 
+ * additional styles specific to the styleguide and not meant for 
+ * outside module consumption.
+ *
+ * @package diy-core-styles
+ * @author Derek Reynolds <drk@diy.org>
+ */
+
+/**
+ * Dependencies
+ */
+@import "./index.less";
+
+/**
+ * Styleguide
+ *
+ * All default styles are mobile first and fluid. media queries can be 
+ * found at the bottom of this file.
+ */
+.inline-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.color-swatch {
+    display: block;
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 25px;
+
+    background-color: attr(data-color);
+
+    // neutral
+    &.almost-black { background-color: @almost-black; }
+    &.dark-gray { background-color: @dark-gray; }
+    &.med-gray { background-color: @med-gray; }
+    &.light-gray { background-color: @light-gray; }
+    &.blanka { background-color: @blanka; border: 1px solid @light-gray; }
+    &.dark-plum { background-color: @dark-plum; }
+    &.plum { background-color: @plum; }
+    &.med-plum { background-color: @med-plum; }
+    &.light-plum { background-color: @light-plum; }
+
+    // cool
+    &.sprout { background-color: @sprout; }
+    &.grape-drink { background-color: @grape-drink; }
+    &.bloo-kazoo { background-color: @bloo-kazoo; }
+
+    // warm
+    &.rad { background-color: @rad; }
+    &.mellow { background-color: @mellow; }
+    &.orange { background-color: @orange; }
+}
+
+/**
+ * Typography
+ */
+._diy-font-stack {
+    font-family: @diy-font-stack;
+    .font-size(32px);
+    color: @default-text-color;
+}
+
+._diy-font-stack-medium {
+    &:extend(._diy-font-stack);
+    font-weight: bold;
+}
+
+._user-font-stack {
+    font-family: @user-font-stack;
+    .font-size(32px);
+    color: @default-text-color;
+}
+
+._user-font-stack-bold {
+    &:extend(._user-font-stack);
+    font-weight: bold;
+}
+
+p {
+    color: #888;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.toc {
+    background-color: @dark-plum;
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        a {
+            padding: 5px 5%;
+        }
+    }
+}
+
+.examples-wrapper {
+    margin-top: 30px;
+}
+
+.example {
+    margin-bottom: 30px;
+    padding: 0 5% 30px 5%;
+    border-bottom: 2px solid @light-gray;
+}
+
+.example:last-child {
+    border-bottom: none;
+}
+
+.example.icons {
+    i {
+        font-size: 32px !important;
+    }
+}
+
+.inputs-wrapper {
+    label { display: block; width: auto; }
+}
+
+/**
+ * media queries
+ *
+ * Currently arbitrary breakpoints based mostly on the content for producing 
+ * optimal line lengths (but probably not perfect yet).
+ */
+@media (min-width: 40em) {
+    .content {
+        flex-direction: row;
+    }
+
+    .toc {
+        flex: 30%;
+        min-width: 300px;
+
+        ul {
+            padding-top: 40px;
+            position: fixed;
+        }
+
+        ul a {
+            padding: 5px 40%;
+        }
+    }
+
+    .example {
+        padding: 0 10% 30px 10%;
+    }
+}
+
+@media (min-width: 60em) {
+    .example {
+        padding: 0 20% 30px 20%;
+    }
+}

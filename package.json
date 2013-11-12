@@ -1,0 +1,19 @@
+{
+  "name": "diy-core-styles",
+  "version": "0.0.1",
+  "description": "Core styles for diy web based projects",
+  "private": true,
+  "main": "index.js",
+  "dependencies": {
+    "autoprefixer": "~0.8.20131104",
+    "cheerio": "~0.12.3",
+    "glob": "~3.2.6",
+    "hypergluten": "~0.0.2",
+    "less": "~1.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "make start",
+    "test": "make test"
+  }
+}

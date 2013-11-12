@@ -1,0 +1,157 @@
+/**
+ * Buttons
+ *
+ * @package diy-core-styles
+ * @author Derek Reynolds <drk@diy.org>
+ */
+
+/**
+ * Whitespace
+ *
+ * Should be applie to all inner elements of a button.
+ */
+.btn-pv {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.btn-pl {
+    padding-left: 10px;
+}
+
+.btn-pr {
+    padding-right: 10px;
+}
+
+/**
+ * More common to have buttons w/ compound styles such as icons/counts
+ * which require additional markup that might need to be full bleed. This allows
+ * core button styles to have no default padding, but in the cases there is no 
+ * additional markup that would set it's own padding this class can be used 
+ * to provide default padding.
+ */
+.btn-plain {
+    &:extend(.btn-pv);
+    &:extend(.btn-pl);
+    &:extend(.btn-pr);
+}
+
+/**
+ * Base DIY button object that should be extended by all button styles.
+ */
+.diy-btn {
+    padding: 0;
+
+    background: @med-gray;
+    border: none;
+    border-radius: 4px;
+
+    color: #fff;
+
+    transition: background .15s ease-in-out,
+                box-shadow .2s ease-in-out;
+}
+
+/**
+ * Base DIY button hover object that should be extended by all 
+ * button hover styles.
+ */
+.diy-btn-hover {
+    color: #fff; // override anchor elements
+}
+
+/**
+ * Base DIY button active object that should be extended by all 
+ * button hover styles.
+ */
+.diy-btn-active {
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.3);
+}
+
+/**
+ * Base DIY button focus object that should be extended by all 
+ * button hover styles.
+ */
+.diy-btn-focus {
+    &:extend(.diy-btn-hover);
+
+    outline: none;
+}
+
+/**
+ * btn-default
+ */
+.btn-default,
+a.btn-default {
+    &:extend(.diy-btn);
+
+    background: @bloo-kazoo;
+
+    &:hover { 
+        &:extend(.diy-btn-hover);
+
+        background: darken(@bloo-kazoo, 10%);
+    }
+
+    &:active {
+        &:extend(.diy-btn-active);
+
+        background: darken(@bloo-kazoo, 15%);
+    }
+
+    &:focus { &:extend(.diy-btn-focus); }
+
+    &.btn-plain { &:extend(.btn-plain); }
+}
+
+/**
+ * btn-cta
+ */
+.btn-cta,
+a.btn-cta {
+    &:extend(.diy-btn);
+
+    background: @sprout;
+
+    &:hover { 
+        &:extend(.diy-btn-hover);
+
+        background: darken(@sprout, 10%);
+    }
+
+    &:active {
+        &:extend(.diy-btn-active);
+
+        background: darken(@sprout, 15%);
+    }
+
+    &:focus { &:extend(.diy-btn-focus); }
+
+    &.btn-plain { &:extend(.btn-plain); }
+}
+
+/**
+ * btn-danger
+ */
+.btn-danger,
+a.btn-danger {
+    &:extend(.diy-btn);
+
+    background: @rad;
+
+    &:hover { 
+        &:extend(.diy-btn-hover);
+
+        background: darken(@rad, 10%);
+    }
+
+    &:active {
+        &:extend(.diy-btn-active);
+
+        background: darken(@rad, 15%);
+    }
+
+    &:focus { &:extend(.diy-btn-focus); }
+
+    &.btn-plain { &:extend(.btn-plain); }
+}
