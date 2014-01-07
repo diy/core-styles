@@ -1,25 +1,27 @@
-.font-assets(@name, @ver: '2.0', @svgid: 'font') {
-    src: url('./fonts/@{name}.eot?@{ver}');
-    src: url('./fonts/@{name}.eot?@{ver}#iefix') format('embedded-opentype'),
-         url('./fonts/@{name}.ttf?@{ver}') format('truetype'),
-         url('./fonts/@{name}.woff?@{ver}') format('woff'),
-         url('./fonts/@{name}.svg?@{ver}#@{svgid}') format('svg');
-}
+.diy-fonts (@font-path: './fonts') {
+    .font-assets(@name, @ver: '2.0', @svgid: 'font') {
+        src: url('@{font-path}/@{name}.eot?@{ver}');
+        src: url('@{font-path}/@{name}.eot?@{ver}#iefix') format('embedded-opentype'),
+             url('@{font-path}/@{name}.ttf?@{ver}') format('truetype'),
+             url('@{font-path}/@{name}.woff?@{ver}') format('woff'),
+             url('@{font-path}/@{name}.svg?@{ver}#@{svgid}') format('svg');
+    }
 
-@font-face {
-    font-family: 'ApexRounded';
-    .font-assets('apex-book');
-    font-weight: normal;
-}
+    @font-face {
+        font-family: 'ApexRounded';
+        .font-assets('apex-book');
+        font-weight: normal;
+    }
 
-@font-face {
-    font-family: 'ApexRounded';
-    .font-assets('apex-medium');
-    font-weight: 700;
-}
+    @font-face {
+        font-family: 'ApexRounded';
+        .font-assets('apex-medium');
+        font-weight: 700;
+    }
 
-@font-face {
-    font-family: 'Icons';
-    .font-assets('diy-regular', '2.0', 'diyregular');
-    font-weight: normal;
+    @font-face {
+        font-family: 'Icons';
+        .font-assets('diy-regular', '2.0', 'diyregular');
+        font-weight: normal;
+    }
 }
