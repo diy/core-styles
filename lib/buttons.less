@@ -155,3 +155,32 @@ a.btn-danger {
 
     &.btn-plain { &:extend(.btn-plain); }
 }
+
+/**
+ * btn-disabled
+ */
+.btn-disabled,
+a.btn-disabled {
+    &:extend(.diy-btn);
+
+    background: @med-gray;
+    color: #eee;
+
+    cursor: default;
+
+    &:hover { 
+        &:extend(.diy-btn-hover);
+
+        background: @med-gray;
+    }
+
+    &:active {
+        &:extend(.diy-btn-active);
+
+        background: @med-gray;
+    }
+
+    &:focus { &:extend(.diy-btn-focus); }
+
+    &.btn-plain { &:extend(.btn-plain); }
+}
