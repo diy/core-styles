@@ -64,11 +64,11 @@ textarea {
     &:focus         { &:extend(.diy-input-focus); }
     &:disabled      { &:extend(.diy-input-disabled); }
 
-    &.field-valid   { 
+    &.field-valid   {
         &:extend(.diy-input-valid);
         &:focus { &:extend(.diy-input-valid-focus); }
     }
-    &.field-invalid { 
+    &.field-invalid {
         &:extend(.diy-input-invalid);
         &:focus { &:extend(.diy-input-invalid-focus); }
     }
@@ -99,7 +99,7 @@ textarea {
     &:extend(.diy-input);
 
     content: "";
-    
+
     position: absolute;
 
     margin: -1px 0 0 -30px;
@@ -111,7 +111,7 @@ textarea {
 }
 
 /**
- * Base style object for inside of toggles meant to be extended by all 
+ * Base style object for inside of toggles meant to be extended by all
  * radio and checkbox inputs.
  */
 .diy-toggle-inner {
@@ -128,8 +128,8 @@ textarea {
 /**
  * Checkbox and Radio styles
  *
- * @note: To achieve custom style of these inputs we style pseudo elements 
- *        which requires a specific markup in which the input is wrapped in 
+ * @note: To achieve custom style of these inputs we style pseudo elements
+ *        which requires a specific markup in which the input is wrapped in
  *        a label element w/ the label text wrapped in a `.label-text` el.
  */
 input[type=checkbox],
@@ -164,7 +164,7 @@ input[type=radio] {
         &:hover:before {
             &:extend(.diy-input-disabled);
         }
-        
+
         &:hover {
             cursor: default;
         }
@@ -199,7 +199,7 @@ input[type=radio] {
 
     & + .label-text:after {
         content: "";
-        
+
         top: 4px;
 
         width: 12px;
@@ -208,6 +208,73 @@ input[type=radio] {
         border-radius: 6px;
 
         background: @default-text-color;
+    }
+}
+
+@keyframes squeeze {
+    50% { height: .9em; }
+}
+
+/**
+ * Toggle switches
+ */
+.toggle-switch {
+    position: relative;
+
+    backface-visibility: hidden;
+    cursor: pointer;
+    user-select: none;
+
+    input:empty {
+        height: 0;
+        width: 0;
+    }
+
+    input:empty ~ .text-label:before,
+    input:empty ~ .text-label:after
+    {
+    	position: absolute;
+    	display: block;
+    	top: 0;
+    	bottom: 0;
+    	right: 0;
+
+    	content: " ";
+
+    	width: 2em;
+        height: 1em;
+
+    	background-color: #fff;
+    	border: 0.16em solid #efefef;
+        border-radius: 15px;
+
+        transform: translate3d(0,0,0);
+    }
+
+    input:empty ~ .text-label:before {
+        transition: background .2s ease-in-out;
+    }
+
+    input:empty ~ .text-label:after {
+        width: 1em;
+    	top: .05em;
+    	bottom: 0.1em;
+    	margin-right: 1.1em;
+    	background-color: #fff;
+    	border-radius: 15px;
+        border: 1px solid #ddd;
+
+        animation: squeeze .3s ease-in-out;
+
+        transition: margin-right .2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    input:checked ~ .text-label:before {
+        background: #00cca2;
+    }
+
+    input:checked ~ .text-label:after {
+        margin-right: 0.1em;
     }
 }
 
