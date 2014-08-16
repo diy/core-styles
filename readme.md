@@ -96,3 +96,7 @@ Now any changes in your `diy-core-styles` repo will immediately be reflected
 in `www`.
 
 Otherwise you can verify against the included styleguide.
+
+# License
+
+Apache 2.0 
